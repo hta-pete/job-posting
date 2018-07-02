@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Post a Job</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://cdn.quilljs.com/1.1.6/quill.min.js"></script>
+    <link rel="stylesheet" href="css/quill.snow.css">
+    
+</head>
+
+<body class="post-job-page"> 
+    
+    <div id="main">
+
+        <div class="cg-post-job-wrapper">
+            <div class="container">
+                <div class="cg-post-job-header">
+                    <h2>Post a Job</h2>
+                </div> 
+                <form id="cg-sign-in-form">
+
+                    <div class="cg-post-job-content">
+                        <div class="field">
+                            <label>Job Title</label>
+                            <input type="text" id="job-title" name="job-title" placeholder="Enter job title.">
+                        </div>  
+                    </div>
+
+                    <div class="cg-post-job-content">
+                        <div class="field">
+                            <label>Job Phone Number</label>
+                            <input type="text" id="job-phone" name="job-phone" placeholder="Enter recruiting phone number.">
+                        </div>  
+                    </div>
+
+                    <div class="cg-post-job-content">
+                        <div class="field">
+                            <label>Job Location</label>
+                            <input type="text" id="job-location" name="job-location" placeholder="Enter job location.">
+                        </div>  
+                    </div>
+
+                    <div class="cg-post-job-content">
+                        <label>Job Description</label>
+                        <div id="cg-editor-description"></div>
+                    </div>
+
+                    <div class="cg-post-job-content">
+                        <label>Driver Benefits</label>
+                        <div id="cg-editor-overview"></div>
+                    </div>
+
+                    <div class="cg-post-job-content">
+                        <label>Experience / Qualifications</label>
+                        <div id="cg-editor-experience"></div>
+                    </div>
+
+                </form> 
+
+                <button id="preview-btn" class="primary_btn">Preview</button>  
+            </div>
+        </div>
+
+        <div id="cg-post-job-preview">
+        	<div class="close-btn">Close <img src="img/close-btn.png" width="20"></div>
+        	<div class="container">
+	        	<h2 id="job-title-preview"></h2>
+	        	<h3 id="job-location-preview"></h3>
+	        	<div class="cta">
+	        		<span class="job-phone-preview"></span><br>
+	        		<a href="" class="apply-btn">Apply Now</a>
+	        	</div>
+	        	<section id="job-description-section">
+	        		<h4>Job Description</h4>
+	        		<div id="job-description-preview"></div>
+	        	</section>
+	        	<section id="job-overview-section">
+	        		<h4>Driver Benefits</h4>
+	        		<div id="job-overview-preview"></div>
+	        	</section>
+	        	<section id="job-experience-section">
+	        		<h4>Experience / Qualifications</h4>
+	        		<div id="job-experience-preview"></div>
+	        	</section>
+	        	<div class="cta">
+	        		<span class="job-phone-preview"></span><br>
+	        		<a href="" class="apply-btn">Apply Now</a>
+	        	</div>
+	        </div>
+        </div>
+    
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
